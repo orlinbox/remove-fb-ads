@@ -1,0 +1,16 @@
+{
+
+  "manifest_version": 2,
+  "name": "Remove FB ads",
+  "version": "2",
+
+  "description": "Remove facebook 'suggested posts' and 'sponsored' ones.",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "js": ["no_fb_ads.js"]
+    }
+  ]
+
+}
