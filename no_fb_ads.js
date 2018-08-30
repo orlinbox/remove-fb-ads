@@ -15,13 +15,15 @@ function removeUnwantedStuff() {
     if (typeof elArray[i] !== 'undefined') {
       if (elArray[i].textContent == stringOne || elArray[i].textContent == stringTwo) {
         var element = elArray[i];
-        while(element.parentNode) {
-          if (element.id.indexOf('hyperfeed') > -1) {
-            element.remove();
-            console.log("REMOVED: " + elArray[i].textContent);
-            break;
+        if (element.offsetWidth > 0) {
+          while(element.parentNode) {
+            if (element.id.indexOf('hyperfeed') > -1) {
+              element.remove();
+              console.log("REMOVED: " + elArray[i].textContent);
+              break;
+            }
+            element = element.parentNode;
           }
-          element = element.parentNode;
         }
       } else {
         elArray[i].className += ' orlprc';
