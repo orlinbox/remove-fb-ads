@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "Remove FB ads",
-  "version": "3",
+  "version": "4",
 
   "description": "Remove facebook 'suggested posts' and 'sponsored' ones.",
 

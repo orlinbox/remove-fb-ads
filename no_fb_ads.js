@@ -1,5 +1,6 @@
 var stringOne = 'Suggested Post';
-var stringTwo = 'SpSonSsoSredS';
+var stringTwo = 'red'; // sponsoRED
+var stringThree = 'so'; // sponSOred
 
 function removeUnwantedStuff() {
   var elArray = [];
@@ -13,7 +14,7 @@ function removeUnwantedStuff() {
 
   for (var i = 0, n = elArray.length; i < n; i++) {
     if (typeof elArray[i] !== 'undefined') {
-      if (elArray[i].textContent == stringOne || elArray[i].textContent == stringTwo) {
+      if (elArray[i].textContent == stringOne || elArray[i].textContent == stringTwo || elArray[i].textContent == stringThree) {
         var element = elArray[i];
         if (element.offsetWidth > 0) {
           while(element.parentNode) {
