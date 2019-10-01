@@ -1,3 +1,5 @@
+This is no longer maintained. Sorry.
+
 # remove-fb-ads
 Browser add-on to remove ads from facebook. Works with Firefox.
 
